@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-osmo",
+  "version": "1.0.0",
+  "description": "An osmo-specific eslint config",
+  "main": "eslintrc.js",
+  "author": {
+      "name": "Osmo Systems",
+      "email": "dev@osmobot.com"
+    },
+  "scripts": {
+  },
+  "keywords": [
+    "''"
+  ],
+  "author": "Osmo Systems",
+  "license": "MIT"
+}
