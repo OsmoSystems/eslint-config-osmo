@@ -8,7 +8,9 @@ module.exports = {
         "ecmaVersion": 6,
     },
     "rules": {
-        "indent": [2, 4],
-        "max-len": [1, { "code": 100 }]
+        "indent": ["error", 4],
+        "max-len": ["warning", { "code": 100 }],
+        "object-curly-spacing": ["error", "never"],
+        "array-bracket-spacing": ["error", "never"]
     }
 };
