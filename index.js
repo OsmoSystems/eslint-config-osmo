@@ -9,8 +9,6 @@ module.exports = {
     },
     "rules": {
         "indent": ["error", 4],
-        "max-len": ["warning", { "code": 100 }],
-        "object-curly-spacing": ["error", "never"],
-        "array-bracket-spacing": ["error", "never"]
+        "max-len": ["warning", { "code": 100 }]
     }
 };
