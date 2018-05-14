@@ -1,25 +1,15 @@
 module.exports = {
-    // "plugins": [
-    //     "unicorn",
-    //     "import",
-    //     "react"
-    // ],
-    // "env": {
-    //     "es6": true,
-    //     "jasmine": true,
-    //     "node": true
-    // },
-    // "parserOptions": {
-    //     "ecmaFeatures": {
-    //         "jsx": true
-    //     },
-    //     "ecmaVersion": 6,
-    //     "sourceType": "module"
-    // },
     "extends": "airbnb-base",
+    // 'env's define global variables that are predefined
+    "env": {
+        "es6": true,
+        "jasmine": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,  // Support ES6 syntax
+    },
     "rules": {
         "indent": [2, 4],
-        "react/jsx-indent": [2, 4],
-        "react/jsx-indent-props": [2, 4]
+        "max-len": [1, { "code": 100 }]
     }
 };
