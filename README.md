@@ -29,28 +29,28 @@ Add an `.eslintrc` file at the top level of your package that references our con
 
 ### Without React:
 
-    ```json
-    {
-        "extends": "eslint-config-osmo"
-    }
-    ```
+```
+{
+    "extends": "eslint-config-osmo"
+}
+```
 
 
 ### With React
 
-    ```json
-    {
-        "extends": "eslint-config-osmo/include-react"
-    }
-    ```
+```
+{
+    "extends": "eslint-config-osmo/include-react"
+}
+```
 
 ## 3. Add lint script
 Finally, add a `lint` script to your `package.json` that runs eslint:
 
-    ```json
-    {
-      "scripts": {
-        "lint": "eslint --ext=.js,.jsx .",
-      }
-    }
-    ```
+```
+{
+  "scripts": {
+    "lint": "eslint --ext=.js,.jsx .",
+  }
+}
+```
