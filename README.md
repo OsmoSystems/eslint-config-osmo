@@ -5,9 +5,10 @@ An [ESLint][eslint] [config file][config] for all Osmo Systems Javascript code.
 [eslint]: http://eslint.org
 [config]: https://eslint.org/docs/developer-guide/shareable-configs
 
+# Usage
 Usage of this config varies depending on if your package uses React (as the lint config then needs to know how to lint .jsx files).
 
-## Installation
+## 1. Installation
 Install our config package and peerDependencies
 
 ### Without React
@@ -23,7 +24,7 @@ npm install --save-dev eslint@4.19 eslint-plugin-import@2.11 eslint-config-airbn
 npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
 ```
 
-## .eslintrc
+## 2. Add .eslintrc
 Add an `.eslintrc` file at the top level of your package that references our config
 
 ### Without React:
@@ -43,7 +44,7 @@ Add an `.eslintrc` file at the top level of your package that references our con
     }
     ```
 
-## lint script
+## 3. Add lint script
 Finally, add a `lint` script to your `package.json` that runs eslint:
 
     ```json
