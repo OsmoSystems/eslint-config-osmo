@@ -8,7 +8,7 @@ module.exports = {
         "ecmaVersion": 6,
     },
     "rules": {
-        "indent": ["error", 4],
-        "max-len": ["warning", { "code": 100 }]
+        "indent": [2, 4],
+        "max-len": [1, { "code": 100 }]
     }
 };
