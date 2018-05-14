@@ -1,17 +1,16 @@
+const sharedConfig = require('index');
+
 module.exports = {
     "extends": "airbnb",
-    "env": {
-        "es6": true,
-        "jasmine": true
-    },
+    "env": sharedConfig.env,
     "parserOptions": {
-        "ecmaVersion": 6,  // Support ES6 syntax
+        ...sharedConfig.parserOptions,
         "ecmaFeatures": {
             "jsx": true
         }
     },
     "rules": {
-        "indent": [2, 4],
+        ...sharedConfig.rules,
         "react/jsx-indent": [2, 4],
         "react/jsx-indent-props": [2, 4]
     }
