@@ -16,7 +16,7 @@ module.exports = {
     //     "ecmaVersion": 6,
     //     "sourceType": "module"
     // },
-    "extends": "airbnb",
+    "extends": "airbnb-base",
     "rules": {
         "indent": [2, 4],
         "react/jsx-indent": [2, 4],
