@@ -54,12 +54,13 @@ ln -s .gitignore .eslintignore
 ```
 
 ## 4. Add lint script
-Finally, add a `lint` script to your `package.json` that runs eslint:
+Finally, add a `lint` script to your `package.json` that runs eslint. Once the entire package has been linted, add a `pretest` script that runs lint when testing, thereby enforces linting at test/build time.
 
 ```
 {
   "scripts": {
     "lint": "eslint --ext=.js,.jsx .",
+    "pretest": "npm run lint",  // Only add this once the entire package has been linted
   }
 }
 ```
