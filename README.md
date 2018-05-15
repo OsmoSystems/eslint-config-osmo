@@ -25,6 +25,7 @@ npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.
 ```
 
 ## 2. Add .eslintrc
+
 Add an `.eslintrc` file at the top level of your package that references our config
 
 ### Without React:
@@ -44,7 +45,15 @@ Add an `.eslintrc` file at the top level of your package that references our con
 }
 ```
 
-## 3. Add lint script
+## 3. Add .eslintignore
+Add an `.eslintignore` that symlinks to `.gitignore`. This is necessary to ensure ES Lint does not run against, e.g. files in node_modules, and the assumption is that anything we want git-ignored we also want eslint-ignored.
+
+In the root of the package, run:
+```bash
+ln -s .gitignore .eslintignore
+```
+
+## 4. Add lint script
 Finally, add a `lint` script to your `package.json` that runs eslint:
 
 ```
