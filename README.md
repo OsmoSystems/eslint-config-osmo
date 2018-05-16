@@ -14,13 +14,13 @@ Install our config package and peerDependencies
 ### Without React
 
 ```
-npm install --save-dev eslint@4.19 eslint-plugin-import@2.11 eslint-config-airbnb-base@12.1
+npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb-base@^12.1
 npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
 ```
 
 ### With React
 ```
-npm install --save-dev eslint@4.19 eslint-plugin-import@2.11 eslint-config-airbnb@16.1 eslint-plugin-jsx-a11y@6.0 eslint-plugin-react@7.7
+npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb@^16.1 eslint-plugin-jsx-a11y@^6.0 eslint-plugin-react@^7.7
 npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
 ```
 
