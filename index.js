@@ -9,7 +9,7 @@ module.exports = {
     },
     "rules": {
         "indent": [2, 4],
-        "max-len": [1, { "code": 100 }],
+        "max-len": [1, { "code": 120 }],
         "comma-dangle": [2, {
             "arrays": "always-multiline",
             "objects": "always-multiline",
