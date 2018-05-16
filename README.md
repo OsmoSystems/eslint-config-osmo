@@ -14,13 +14,13 @@ Install our config package and peerDependencies
 ### Without React
 
 ```
-npm install --save-dev eslint@4.19 eslint-plugin-import@2.11 eslint-config-airbnb-base@12.1
+npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb-base@^12.1
 npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
 ```
 
 ### With React
 ```
-npm install --save-dev eslint@4.19 eslint-plugin-import@2.11 eslint-config-airbnb@16.1 eslint-plugin-jsx-a11y@6.0 eslint-plugin-react@7.7
+npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb@^16.1 eslint-plugin-jsx-a11y@^6.0 eslint-plugin-react@^7.7
 npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
 ```
 
@@ -54,12 +54,13 @@ ln -s .gitignore .eslintignore
 ```
 
 ## 4. Add lint script
-Finally, add a `lint` script to your `package.json` that runs eslint:
+Finally, add a `lint` script to your `package.json` that runs eslint. Once the entire package has been linted, add a `pretest` script that runs lint when testing, thereby enforces linting at test/build time.
 
 ```
 {
   "scripts": {
     "lint": "eslint --ext=.js,.jsx .",
+    "pretest": "npm run lint",  // Only add this once the entire package has been linted
   }
 }
 ```
