@@ -5,7 +5,7 @@
   "homepage": "https://github.com/OsmoSystems/eslint-config-osmo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OsmoSystems/eslint-config-osmo.git"
+    "url": "https://github.com/OsmoSystems/eslint-config-osmo.git"
   },
   "license": "UNLICENSED",
   "author": {
