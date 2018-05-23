@@ -2,10 +2,15 @@
   "name": "eslint-config-osmo",
   "version": "1.0.0",
   "description": "An osmo-specific eslint config",
-  "main": "index.js",
+  "homepage": "https://github.com/OsmoSystems/eslint-config-osmo#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsmoSystems/eslint-config-osmo.git"
+  },
+  "license": "UNLICENSED",
   "author": {
     "name": "Osmo Systems",
     "email": "dev@osmobot.com"
   },
-  "license": "MIT"
+  "main": "index.js"
 }
