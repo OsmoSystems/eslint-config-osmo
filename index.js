@@ -5,7 +5,7 @@ module.exports = {
         "jasmine": true
     },
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": 2017,
     },
     "rules": {
         "indent": [2, 4],
