@@ -18,6 +18,7 @@ module.exports = {
             "functions": "never",
         }],
         "consistent-return": [1],
+        "object-curly-newline": [2, { "consistent": true }],
         // TODO (SOFT-49): These are warnings for now (to avoid boiling ocean). Make them errors.
         "camelcase": [1],
         "no-param-reassign": [1]
