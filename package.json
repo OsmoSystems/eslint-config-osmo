@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-osmo",
+  "name": "@osmosystems/eslint-config-osmo",
   "version": "1.0.0",
   "description": "An osmo-specific eslint config",
   "homepage": "https://github.com/OsmoSystems/eslint-config-osmo#readme",
