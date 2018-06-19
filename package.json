@@ -14,6 +14,6 @@
   },
   "main": "index.js",
   "scripts": {
-    "get-new-version": "node setPatchVersion.js $npm_package_version"
+    "update-patch-version": "npm --silent --no-git-tag-version version ${npm_package_version%?}$new_patch_version"
   }
 }

@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  publish:
     docker:
       # specify the version you desire here
       - image: circleci/node:8.1.2
@@ -20,14 +20,16 @@ jobs:
 
       - run:
           name: set patch version to build number
-          command: npm --no-git-tag-version version "$(npm run --silent get-new-version $CIRCLE_BUILD_NUM)"
+          command: new_patch_version=$CIRCLE_BUILD_NUM npm run update-patch-version
 
-      # WIP: Don't publish yet
-      # - run: npm publish
+      - run: npm publish
 
 workflows:
     version: 2
     build-workflow:
         jobs:
-          - build:
+          - publish:
               context: npm
+              filters:
+                branches:
+                  only: master
