@@ -14,12 +14,13 @@ jobs:
     steps:
       - checkout
 
-      # Set up NPM permissions
-      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: set up NPM credentials
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 
       - run:
-          name: Bump patch version and commit
-          command: npm --no-git-tag-version version patch
+          name: set patch version to build number
+          command: npm --no-git-tag-version version "$(npm run --silent get-new-version $CIRCLE_BUILD_NUM)"
 
       # WIP: Don't publish yet
       # - run: npm publish
