@@ -21,7 +21,8 @@ jobs:
           name: Bump patch version and commit
           command: npm --no-git-tag-version version patch
 
-      - run: npm publish
+      # WIP: Don't publish yet
+      # - run: npm publish
 
 workflows:
     version: 2
