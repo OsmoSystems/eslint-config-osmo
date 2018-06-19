@@ -12,5 +12,8 @@
     "name": "Osmo Systems",
     "email": "dev@osmobot.com"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+      "postversion": "git add package.json package-lock.json && git commit -m $npm_package_version"
+  }
 }

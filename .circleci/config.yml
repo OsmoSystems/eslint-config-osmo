@@ -1,0 +1,31 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:8.1.2
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Set up NPM permissions
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+
+      - run:
+          name: Bump patch version and commit
+          command: npm --no-git-tag-version version patch
+
+      - run: npm publish
+
+workflows:
+    version: 2
+    build-workflow:
+        jobs:
+          - build:
+              context: npm
