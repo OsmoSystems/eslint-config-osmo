@@ -12,5 +12,8 @@
     "name": "Osmo Systems",
     "email": "dev@osmobot.com"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "update-patch-version": "npm --no-git-tag-version version ${npm_package_version%?}$new_patch_version"
+  }
 }
