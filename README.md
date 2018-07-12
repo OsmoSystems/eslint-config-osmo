@@ -15,13 +15,13 @@ Install our config package and peerDependencies
 
 ```
 npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb-base@^12.1
-npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
+npm install --save-dev "@osmosystems/eslint-config-osmo"
 ```
 
 ### With React
 ```
 npm install --save-dev eslint@^4.19 eslint-plugin-import@^2.11 eslint-config-airbnb@^16.1 eslint-plugin-jsx-a11y@^6.0 eslint-plugin-react@^7.7
-npm install --save-dev "git+ssh://git@github.com/OsmoSystems/eslint-config-osmo.git"
+npm install --save-dev "@osmosystems/eslint-config-osmo"
 ```
 
 ## 2. Add .eslintrc
@@ -32,7 +32,7 @@ Add an `.eslintrc` file at the top level of your package that references our con
 
 ```
 {
-    "extends": "eslint-config-osmo"
+    "extends": "@osmosystems/eslint-config-osmo"
 }
 ```
 
@@ -41,7 +41,7 @@ Add an `.eslintrc` file at the top level of your package that references our con
 
 ```
 {
-    "extends": "eslint-config-osmo/include-react"
+    "extends": "@osmosystems/eslint-config-osmo/include-react"
 }
 ```
 
