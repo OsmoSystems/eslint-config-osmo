@@ -1,4 +1,4 @@
-const sharedConfig = require('index');
+const sharedConfig = require('./index');
 
 module.exports = {
     "extends": "airbnb",
