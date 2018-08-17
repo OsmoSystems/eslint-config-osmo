@@ -1,6 +1,6 @@
 {
   "name": "@osmosystems/eslint-config-osmo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An osmo-specific eslint config",
   "homepage": "https://github.com/OsmoSystems/eslint-config-osmo#readme",
   "repository": {
