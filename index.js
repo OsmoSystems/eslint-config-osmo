@@ -22,6 +22,5 @@ module.exports = {
         "max-len": [1, { "code": 120 }],
         "no-param-reassign": [1], // TODO (SOFT-49): Warning for now (to avoid boiling ocean). Make it an error.
         "object-curly-newline": [2, { "consistent": true }],
-        "react/jsx-indent": "off"
     }
 };
